@@ -1,0 +1,41 @@
+{
+  "$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.0",
+  "body":[
+    {
+        "type": "TextBlock",
+        "text": "This is a test card.",
+        "color": "good"
+    },
+    {
+      "type": "Container",
+      "style": "attention",
+      "items": [
+        {
+          "type": "TextBlock",
+          "text": "Submit action"
+        }
+      ],
+      "selectAction": {
+        "type": "Action.Submit",
+        "title": "Submit action",
+        "data": {
+          "info": "My submit action data"
+        }
+     }
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Submit",
+      "title": "Click here to say \"Hello\"",
+      "data": "Hello"
+    },
+    {
+      "type": "Action.Submit",
+      "title": "Click here to say \"Hey\"",
+      "data": "Hello"
+    }
+   ]
+}
