@@ -75,11 +75,3 @@ class BotDialog(ActivityHandler):
             await self.con_statea.save_changes(turn_context)
         else:
             await turn_context.send_activity(f"{response[str(entity)]}")
-#            
-#        dialog_context = await self.dialog_set.create_context(turn_context)
-#        if(dialog_context.active_dialog is not None):
-#            await dialog_context.continue_dialog()
-#        else:
-#            await dialog_context.begin_dialog("main_dialog")
-#        await self.con_statea.save_changes(turn_context)
-    
